@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" media = "all">
         <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-        <title>Sign in form</title>
+        <title>Sign up form</title>
         <style>
             h1 {
                 text-align: center;
@@ -27,7 +27,7 @@
                 position: relative;
                 margin: 5% auto;
                 width: 300px;
-                height: 350px;
+                height: 550px;
                 background: #fff;
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
                 text-align: center;
@@ -39,7 +39,7 @@
                 box-sizing: border-box;
                 padding: 40px;
                 width: 300px;
-                height: 350px;
+                height: 600px;
                 text-align: center;
             }
             input[type = "text"]
@@ -83,21 +83,32 @@
         </style>
     </head>
     <body>
-        <h1>Sign In Form</h1>
+        <h1>Sign Up Form</h1>
         <div id = "login-box">
             <div class = "left-box">
-                <h2>Sign In</h2>
+                <h2>Sign Up</h2>
+                <p>Don't bother signing in because it still needs progress.</p>
                 <form class = "register" method = "post" data-enable-strength-password = "no" data-minimum-password-strength = "3" novalidate = "novalidate">
-                    <label>
-                        Username or User E-mail
+                    <label class = "ur-label" for = "user_name">
+                        Username
                         <abbr class = "required" title = "required">*</abbr>
                     </label>
-                    <input type = "text" name = "username or E-mail"><br><br>
-                    <label>
+                    <input id = "user_name" class = "input-text input-username ur-frontend-field" data-id = "username" type = "username" required = "required" name = "username" data-label = "username"><br><br>
+                    <label class = "ur-label" for = "user_email">
+                        User E-mail
+                        <abbr class = "required" title = "required">*</abbr>
+                    </label>
+                    <input type = "email" id = "user_email" class = "input-text input-email ur-frontend-field" data-id = "user_email" type = "email" required = "required" name = "user_email" data-label = "User Email"><br><br>
+                    <label class = "ur-label" for = "user_pass">
                         User Password
                         <abbr class = "required" title = "required">*</abbr>
                     </label>
-                    <input type = "Password" name = "Password"><br><br>
+                    <input id = "user_pass" class = "input-text input-password ur-frontend-field" data-id = "user_pass" type = "password" required = "required" name = "user_pass" data-label = "User Password"><br><br>
+                    <label class = "ur-label" for = "user_confirm_pass">
+                        Confirm Password
+                        <abbr class = "required" title = "required">*</abbr>
+                    </label>
+                    <input id = "user_confirm_password" class = "input-text input-password ur-frontend-field" data-id = "user_confirm_password" type = "password" required = "required" name = "user_confirm_password" data-label = "Confirm Password"><br><br>
                     <button type = "button" onclick = "window.location.href = 'Winteria School.html'">Winteria Schools</button>
                 </form>    
             </div>

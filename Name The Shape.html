@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <title>Winteria Schools(Courses/Early Math/Name The Shape)</title>
+        <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link href = "style.css" rel = "stylesheet">
+        <link href = "ahk1.ahk" rel = "ahk">
+    </head>
+    <body>
+        <!-- <Navigation> -->
+            <nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top">
+                <div class = "container-fluid">
+                    <a class = "image-fluid" class = "navbar-brand" href = "#"><img src = "img/logo.png" width = "100" height = "100"></a>
+                    <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarResponsive">
+                        <span class = "navbar-toggler-icon"></span>
+                    </button>
+                    <a href = "Pre-School.html" class = "btn btn-outline-secondary">< back</a><br><br>
+                    <a href = "Winteria School.html" class = "btn btn-outline-secondary"><img src = "img/Home.png" width = "50" height = "50"></a><br><br>
+                </div>
+            </nav>
+        <!-- </Navigation> -->
+        <!--- <Image Slider> -->
+            <div id = "a" id = "slides" class = "carousel-slide" data-ride = "carousel">
+                <div class = "carousel-inner">
+                    <div class = "carousel-item active">
+                        <img class = "image-fluid" src = "img/Simple Shapes.png">
+                        <div class = "carousel-caption">
+                            <h1 class = "display-2">Name The Shape</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--- </Image Slider> -->
+        <!--- <name the shape Questions> -->
+            <div style = "text-align: center;" id = "a" id = "slides" class = "carousel-slide" data-ride = "carousel">
+                <div class = "carousel-item active">
+                    <p>What is this shape's name?</p><br>
+                    <img src = "img/Square.png" width = "200" length = "100"><br><br>
+                    <input id = "text_a" type = "text" name = "Square">
+                    <p id = "answer1"></p>
+                    <button onclick = "answerstosquare();">Done</button>
+                    <br><br>
+                    <p>What is this shape's name?</p><br>
+                    <img src = "img/Circle.png" width = "200" length = "100"><br><br>
+                    <input id = "text_b" type = "text" name = "Circle">
+                    <p id = "answer2"></p>
+                    <button onclick = "answerstocircle();">Done</button>
+                    <br><br>    
+                    <p>What is the Shape's name?</p><br>
+                    <img src = "img/Diamond.png" width = "200" length = "100"><br><br>
+                    <input id = "text_c" type = "text" name = "Diamond">
+                    <p id = "answer3"></p>
+                    <button onclick = "answerstodiamond();">Done</button>
+                    <br><br>   
+                    <p>What is the Shape's name?</p><br>
+                    <img src = "img/Star.png" width = "200" length = "100"><br><br>
+                    <input id = "text_d" type = "text" name = "Star">
+                    <p id = "answer4"></p>
+                    <button onclick = "answerstostar();">Done</button>
+                    <br><br> 
+                    <p>What is the Shape's name?</p><br>
+                    <img src = "img/Heart.png" width = "200" length = "100"><br><br>
+                    <input id = "text_e" type = "text" name = "Heart">
+                    <p id = "answer5"></p>
+                    <button onclick = "answerstoheart();">Done</button>
+                    <br><br> 
+                    <p>What is the Shape's name?</p><br>
+                    <img src = "img/Triangle.png" width = "200" length = "100"><br><br>
+                    <input id = "text_f" type = "text" name = "Triangle">
+                    <p id = "answer6"></p>
+                    <button onclick = "answerstotriangle();">Done</button>
+                    <br><br> 
+                    <p>What is the Shape's name?</p><br>
+                    <img src = "img/Oval.png" width = "200" length = "100"><br><br>
+                    <input id = "text_g" type = "text" name = "Oval">
+                    <p id = "answer7"></p>
+                    <button onclick = "answerstooval();">Done</button>
+                    <br><br> 
+                    <p>What is the Shape's name?</p><br>
+                    <img src = "img/Rectangle.png" width = "200" length = "100"><br><br>
+                    <input id = "text_h" type = "text" name = "Rectangle">
+                    <p id = "answer8"></p>
+                    <button onclick = "answerstorectangle();">Done</button>
+                    <br><br> 
+                    <p>What is the Shape's name?</p><br>
+                    <img src = "img/Pentagon.png" width = "200" length = "100"><br><br>
+                    <input id = "text_i" type = "text" name = "Pentagon">
+                    <p id = "answer9"></p>
+                    <button onclick = "answerstopentagon();">Done</button>
+                    <br><br> 
+                </div>
+            </div>
+        <!--- </Songs> -->
+        <!--- <Footer> -->
+            <footer>
+                <div class = "container-fluid padding">
+                    <div class = "row text-center">
+                        <div class = "col-md-4">
+                            <div id = "fig">
+                                <hr class = "light">
+                                <hr class = "light">
+                                <h3>Emails</h3>
+                                <hr class = "light">
+                                <hr class = "light">
+                                <p>email:</p>
+                                <p>WinteriaSchools@gmail.com</p>
+                                <br>
+                                <p>email:</p>
+                                <p>Dhawith3@gmail.com</p>
+                                <br>
+                                <p>use this email:</p>
+                                <p>WinteriaSchools@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class = "col-md-4">
+                            <img class = "img-fluid" src = "img/logo.png" width = "450" height = "400">
+                        </div>
+                        <div class = "col-md-4">
+                            <div id = "lig">
+                                <hr class = "light">
+                                <hr class = "light">
+                                <h3>Our Days</h3>
+                                <hr class = "light">
+                                <hr class = "light">
+                                <p>Sunday</p>
+                                <p>Monday</p>
+                                <p>Tuesday</p>
+                                <p>Wednesday</p>
+                                <p>Thursday</p>
+                                <p>Friday</p>
+                                <p>Saturday</p>
+                            </div>
+                        </div>
+                        <div class = "col-12">
+                            <hr class = "light">
+                            <h5>W.S.github.io</h5>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        <!--- </Footer> -->
+        <script type = "text/javascript">
+            function answerstosquare()
+            {
+                var a=document.getElementById("text_a").value;
+                if (a=="square")
+                {
+                document.getElementById("answer1").innerHTML="Correct!";
+                }
+                else
+                {
+                document.getElementById("answer1").innerHTML="Oops! Try again!";
+                }
+            }
+            function answerstocircle()
+            {
+                var a=document.getElementById("text_b").value;
+                if (a=="circle")
+                {
+                document.getElementById("answer2").innerHTML="Correct!";
+                }
+                else
+                {
+                document.getElementById("answer2").innerHTML="Oops! Try again!";
+                }
+            }
+            function answerstodiamond()
+            {
+                var a=document.getElementById("text_c").value;
+                if (a=="diamond")
+                {
+                document.getElementById("answer3").innerHTML="Correct!";
+                }
+                else
+                {
+                document.getElementById("answer3").innerHTML="Oops! Try again!";
+                }
+            }
+            function answerstostar()
+            {
+                var a=document.getElementById("text_d").value;
+                if (a=="star")
+                {
+                document.getElementById("answer4").innerHTML="Correct!";
+                }
+                else
+                {
+                document.getElementById("answer4").innerHTML="Oops! Try again!";
+                }
+            }
+            function answerstoheart()
+            {
+                var a=document.getElementById("text_e").value;
+                if (a=="heart")
+                {
+                document.getElementById("answer5").innerHTML="Correct!";
+                }
+                else
+                {
+                document.getElementById("answer5").innerHTML="Oops! Try again!";
+                }
+            }
+            function answerstotriangle()
+            {
+                var a=document.getElementById("text_f").value;
+                if (a=="triangle")
+                {
+                document.getElementById("answer6").innerHTML="Correct!";
+                }
+                else
+                {
+                document.getElementById("answer6").innerHTML="Oops! Try again!";
+                }
+            }
+            function answerstooval()
+            {
+                var a=document.getElementById("text_g").value;
+                if (a=="oval")
+                {
+                document.getElementById("answer7").innerHTML="Correct!";
+                }
+                else
+                {
+                document.getElementById("answer7").innerHTML="Oops! Try again!";
+                }
+            }
+            function answerstorectangle()
+            {
+                var a=document.getElementById("text_h").value;
+                if (a=="rectangle")
+                {
+                document.getElementById("answer8").innerHTML="Correct!";
+                }
+                else
+                {
+                document.getElementById("answer8").innerHTML="Oops! Try again!";
+                }
+            }
+            function answerstopentagon()
+            {
+                var a=document.getElementById("text_i").value;
+                if (a=="pentagon")
+                {
+                document.getElementById("answer9").innerHTML="Correct!";
+                }
+                else
+                {
+                document.getElementById("answer9").innerHTML="Oops! Try again!";
+                }
+                alert("Congratulations! You completed early math, you may continue to 1st grade math!");
+            }
+        </script>
+    </body>
+</html>
