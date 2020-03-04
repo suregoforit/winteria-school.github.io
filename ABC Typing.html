@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <title>Winteria Schools(Courses/Early Math/ABC Typing)</title>
+        <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link href = "style.css" rel = "stylesheet">
+    </head>
+    <body>
+        <!-- <Navigation> -->
+            <nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top">
+                <div class = "container-fluid">
+                    <a class = "image-fluid" class = "navbar-brand" href = "#"><img src = "img/logo.png" width = "100" height = "100"></a>
+                    <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarResponsive">
+                        <span class = "navbar-toggler-icon"></span>
+                    </button>
+                    <a href = "Pre-School.html" class = "btn btn-outline-secondary">< back</a><br><br>
+                    <a href = "Winteria School.html" class = "btn btn-outline-secondary"><img src = "img/Home.png" width = "50" height = "50"></a><br><br>
+                </div>
+            </nav>
+        <!-- </Navigation> -->
+        <!--- <Image Slider> -->
+            <div id = "a" id = "slides" class = "carousel-slide" data-ride = "carousel">
+                <div class = "carousel-inner">
+                    <div class = "carousel-item active">
+                        <img class = "image-fluid" src = "img/ABC typing.png">
+                        <div class = "carousel-caption">
+                            <h1 class = "display-2">ABC Typing</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--- </Image Slider> -->
+        <!--- <ABC Typing Questions> -->
+            <div style = "text-align: center;" id = "a" id = "slides" class = "carousel-slide" data-ride = "carousel">
+                <div class = "carousel-inner">
+                    <div class = "carousel-item active">
+                        <h4>These are the uppercase letters of the phonic song:</h4>
+                        <p>
+                            A B C D E F G H I J
+                            <br>
+                            K L M N O P Q R S T
+                            <br>
+                            U V W X Y Z
+                            <br>
+                        </p>
+                        <br><br>
+                        <p>Can you type the uppercase letters: </p>
+                        <input id = "text_k" type = "text" name = "uppercase alphabet 1">
+                        <p id = "answer1"></p><br><br>   
+                        <button onclick = "answerstoupercasealphabet1();">Done</button>
+                        <p>Can you type the uppercase letters again: </p>
+                        <input id = "text_l" type = "text" name = "uppercase alphabet 2">
+                        <p id = "answer2"></p><br><br>
+                        <button onclick = "answerstoupercasealphabet2();">Done</button>
+                        <h4>These are the lowercase letters of the phonic song:</h4>
+                        <p>
+                            a b c d e f g h i j 
+                            <br>
+                            k l m n o p q r s t 
+                            <br>
+                            u v w x y z
+                            <br>
+                        </p>  
+                        <br><br>
+                        <p>Can you type the lowercase letters: </p>
+                        <input id = "text_a" type = "text" name = "lowercase alphabet 1">
+                        <p id = "answer3"></p><br>
+                        <button onclick = "answerstolowercasealphabet1();">Done</button>
+                        <p>Can you type the lowercase letters again: </p>
+                        <input id = "text_b" type = "text" name = "lowercase alphabet 2">
+                        <p id = "answer4"></p><br>         
+                        <button onclick = "answerstolowercasealphabet2();">Done</button><br><br>
+                    </div>
+                </div>
+            </div>
+        <!--- </Songs> -->
+        <!--- <Footer> -->
+            <footer>
+                <div class = "container-fluid padding">
+                    <div class = "row text-center">
+                        <div class = "col-md-4">
+                            <div id = "fig">
+                                <hr class = "light">
+                                <hr class = "light">
+                                <h3>Emails</h3>
+                                <hr class = "light">
+                                <hr class = "light">
+                                <p>email:</p>
+                                <p>WinteriaSchools@gmail.com</p>
+                                <br>
+                                <p>email:</p>
+                                <p>Dhawith3@gmail.com</p>
+                                <br>
+                                <p>use this email:</p>
+                                <p>WinteriaSchools@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class = "col-md-4">
+                            <img class = "img-fluid" src = "img/logo.png" width = "450" height = "400">
+                        </div>
+                        <div class = "col-md-4">
+                            <div id = "lig">
+                                <hr class = "light">
+                                <hr class = "light">
+                                <h3>Our Days</h3>
+                                <hr class = "light">
+                                <hr class = "light">
+                                <p>Sunday</p>
+                                <p>Monday</p>
+                                <p>Tuesday</p>
+                                <p>Wednesday</p>
+                                <p>Thursday</p>
+                                <p>Friday</p>
+                                <p>Saturday</p>
+                            </div>
+                        </div>
+                        <div class = "col-12">
+                            <hr class = "light">
+                            <h5>W.S.github.io</h5>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        <!--- </Footer> -->
+        <script type = "text/javascript">
+        function answerstouppercasealphabet1()
+            {
+                var a=document.getElementById("text_k").value;
+                if (a=="abcdefghijklmnopqrstuvwxyz")
+                {
+                    document.getElementById("answer1").innerHTML="Correct!";
+                }
+                else if(a=="a b c d e f g h i j k l m n o p q r s t u v w x y z")
+                {
+                    document.getElementById("answer1").innerHTML="Correct!";
+                }
+                else if(a==" a b c d e f g h i j k l m n o p q r s t u v w x y z ")
+                {
+                    document.getElementById("answer1").innerHTML="Correct!";
+                }
+                else if(a==" a b c d e f g h i j k l m n o p q r s t u v w x y z")
+                {
+                    document.getElementById("answer1").innerHTML="Correct!";
+                }
+                else if(a=="a b c d e f g h i j k l m n o p q r s t u v w x y z ")
+                {
+                    document.getElementById("answer1").innerHTML="Correct!";
+                }
+                else
+                {
+                document.getElementById("answer1").innerHTML="Oops! Try again!";
+                }
+            }
+            function answerstouppercasealphabet2()
+            {
+                var a=document.getElementById("text_l").value;
+                if (a=="abcdefghijklmnopqrstuvwxyz")
+                {
+                    document.getElementById("answer2").innerHTML="Correct!";
+                }
+                else if(a=="a b c d e f g h i j k l m n o p q r s t u v w x y z")
+                {
+                    document.getElementById("answer2").innerHTML="Correct!";
+                }
+                else if(a==" a b c d e f g h i j k l m n o p q r s t u v w x y z ")
+                {
+                    document.getElementById("answer2").innerHTML="Correct!";
+                }
+                else if(a==" a b c d e f g h i j k l m n o p q r s t u v w x y z")
+                {
+                    document.getElementById("answer2").innerHTML="Correct!";
+                }
+                else if(a=="a b c d e f g h i j k l m n o p q r s t u v w x y z ")
+                {
+                    document.getElementById("answer2").innerHTML="Correct!";
+                }
+                else
+                {
+                document.getElementById("answer2").innerHTML="Oops! Try again!";
+                }
+                alert("Now, click the back button on the top of the page to learn something else!");
+            }
+            function answerstolowercasealphabet1()
+            {
+                var a=document.getElementById("text_b").value;
+                if (a=="abcdefghijklmnopqrstuvwxyz")
+                {
+                    document.getElementById("answer3").innerHTML="Correct!";
+                }
+                else if(a=="a b c d e f g h i j k l m n o p q r s t u v w x y z")
+                {
+                    document.getElementById("answer3").innerHTML="Correct!";
+                }
+                else if(a==" a b c d e f g h i j k l m n o p q r s t u v w x y z ")
+                {
+                    document.getElementById("answer3").innerHTML="Correct!";
+                }
+                else if(a==" a b c d e f g h i j k l m n o p q r s t u v w x y z")
+                {
+                    document.getElementById("answer3").innerHTML="Correct!";
+                }
+                else if(a=="a b c d e f g h i j k l m n o p q r s t u v w x y z ")
+                {
+                    document.getElementById("answer3").innerHTML="Correct!";
+                }
+                else
+                {
+                document.getElementById("answer3").innerHTML="Oops! Try again!";
+                }
+            }
+            function answerstolowercasealphabet2()
+            {
+                var a=document.getElementById("text_b").value;
+                if (a=="abcdefghijklmnopqrstuvwxyz")
+                {
+                    document.getElementById("answer4").innerHTML="Correct!";
+                }
+                else if(a=="a b c d e f g h i j k l m n o p q r s t u v w x y z")
+                {
+                    document.getElementById("answer4").innerHTML="Correct!";
+                }
+                else if(a==" a b c d e f g h i j k l m n o p q r s t u v w x y z ")
+                {
+                    document.getElementById("answer4").innerHTML="Correct!";
+                }
+                else if(a==" a b c d e f g h i j k l m n o p q r s t u v w x y z")
+                {
+                    document.getElementById("answer4").innerHTML="Correct!";
+                }
+                else if(a=="a b c d e f g h i j k l m n o p q r s t u v w x y z ")
+                {
+                    document.getElementById("answer4").innerHTML="Correct!";
+                }
+                else
+                {
+                document.getElementById("answer4").innerHTML="Oops! Try again!";
+                }
+                alert("Now, click the back button on the top of the page to learn something else!");
+            }
+        </script>
+    </body>
+</html>
