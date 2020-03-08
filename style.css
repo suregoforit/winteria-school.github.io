@@ -153,14 +153,6 @@ hr.light-100 {
 .img-fluidd {
   border: 10px ridge gold;
 }
-#lig {
-  text-align: center;
-  clear: both;
-}
-#fig {
-  text-align: center;
-  clear: both;
-}
 .tooltip {
   position: relative;
   display: inline-block;
