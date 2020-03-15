@@ -31,4 +31,4 @@
 
 >Answer: I care about other's education because if they don't learn anything as a kid, what will they learn when they grow up?
 
->Paragraph: 
+>Paragraph: I care about kids education. The 1st reason why I care about kids education is because kids learn a lot of things easier as a kid than a child or a grown up, so, if kids don't learn anything as a kid, what will they learn when they grow up? The 2nd reason why I care about kids education is because when kids grow up and kids don't have any education, they will have a hard time having a job, working on his/her job, and even for his/her own matters. The 3rd reason why I care about kids education is because kids might not understand how to read, write, or do math, if they don't learn how to do that, the future of kids are going to be frustrating to go into. I care about kids more than anything exept my family and friends.
