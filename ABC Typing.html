@@ -49,16 +49,14 @@
                             <br>
                         </p>
                         <br><br>
-                        <p>Can you type the uppercase letters: </p>
+                        <p>Can you type the UPPERCASE letters: </p>
                         <input id = "text_a" type = "text" name = "uppercase alphabet 1">
-                        <p id = "answer1"></p><br><br>   
-                        <button onclick = "answerstoupercasealphabet1();">Done</button>
-                        <p>Can you type the uppercase letters again: </p>
-                        <input id = "text_b" type = "text" name = "uppercase alphabet 2">
-                        <p id = "answer2"></p><br><br>
-                        <button onclick = "answerstoupercasealphabet2();">Done</button>
-                        <h4>These are the lowercase letters of the phonic song:</h4>
-                        <p>
+                        <p id = "answer1"></p><br>
+                        <button onclick = "answers();">Done</button>
+                        <p>Can you type the lowercase letters again: </p>
+                        <input id = "text_a" type = "text" name = "uppercase alphabet 2">
+                        <p id = "answer1"></p><br>         
+                        <button onclick = "answers();">Done</button><br><br>
                             a b c d e f g h i j 
                             <br>
                             k l m n o p q r s t 
@@ -68,13 +66,13 @@
                         </p>  
                         <br><br>
                         <p>Can you type the lowercase letters: </p>
-                        <input id = "text_c" type = "text" name = "lowercase alphabet 1">
-                        <p id = "answer3"></p><br>
-                        <button onclick = "answerstolowercasealphabet1();">Done</button>
+                        <input id = "text_b" type = "text" name = "lowercase alphabet 1">
+                        <p id = "answer2"></p><br>
+                        <button onclick = "answers();">Done</button>
                         <p>Can you type the lowercase letters again: </p>
-                        <input id = "text_d" type = "text" name = "lowercase alphabet 2">
-                        <p id = "answer4"></p><br>         
-                        <button onclick = "answerstolowercasealphabet2();">Done</button><br><br>
+                        <input id = "text_b" type = "text" name = "lowercase alphabet 2">
+                        <p id = "answer2"></p><br>         
+                        <button onclick = "answers();">Done</button><br><br>
                     </div>
                 </div>
             </div>
@@ -128,7 +126,7 @@
             </footer>
         <!--- </Footer> -->
         <script type = "text/javascript">
-        function answerstouppercasealphabet1()
+        function answers()
             {
                 var a=document.getElementById("text_a").value;
                 if (a=="ABCDEFGHIJKLMNOPQRSTUVWXYZ")
@@ -155,89 +153,30 @@
                 {
                 document.getElementById("answer1").innerHTML="Oops! Try again!";
                 }
-            }
-            function answerstouppercasealphabet2()
-            {
-                var a=document.getElementById("text_l").value;
-                if (a=="ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+                var a=document.getElementById("text_b").value;
+                if (a=="abcdefghijklmnopqrstuvwxyz")
                 {
                     document.getElementById("answer2").innerHTML="Correct!";
                 }
-                else if(a=="A B C D E F G H I J K L M N O P Q R S T U V W X Y Z")
+                else if(a=="a b c d e f g h i j k l m n o p q r s t u v w x y z")
                 {
                     document.getElementById("answer2").innerHTML="Correct!";
                 }
-                else if(a==" A B C D E F G H I J K L M N O P Q R S T U V W X Y Z ")
+                else if(a==" a b c d e f g h i j k l m n o p q r s t u v w x y z ")
                 {
                     document.getElementById("answer2").innerHTML="Correct!";
                 }
-                else if(a==" A B C D E F G H I J K L M N O P Q R S T U V W X Y Z")
+                else if(a==" a b c d e f g h i j k l m n o p q r s t u v w x y z")
                 {
                     document.getElementById("answer2").innerHTML="Correct!";
                 }
-                else if(a=="A B C D E F G H I J K L M N O P Q R S T U V W X Y Z ")
+                else if(a=="a b c d e f g h i j k l m n o p q r s t u v w x y z ")
                 {
                     document.getElementById("answer2").innerHTML="Correct!";
                 }
                 else
                 {
                 document.getElementById("answer2").innerHTML="Oops! Try again!";
-                }
-            }
-            function answerstolowercasealphabet1()
-            {
-                var a=document.getElementById("text_c").value;
-                if (a=="abcdefghijklmnopqrstuvwxyz")
-                {
-                    document.getElementById("answer3").innerHTML="Correct!";
-                }
-                else if(a=="a b c d e f g h i j k l m n o p q r s t u v w x y z")
-                {
-                    document.getElementById("answer3").innerHTML="Correct!";
-                }
-                else if(a==" a b c d e f g h i j k l m n o p q r s t u v w x y z ")
-                {
-                    document.getElementById("answer3").innerHTML="Correct!";
-                }
-                else if(a==" a b c d e f g h i j k l m n o p q r s t u v w x y z")
-                {
-                    document.getElementById("answer3").innerHTML="Correct!";
-                }
-                else if(a=="a b c d e f g h i j k l m n o p q r s t u v w x y z ")
-                {
-                    document.getElementById("answer3").innerHTML="Correct!";
-                }
-                else
-                {
-                document.getElementById("answer3").innerHTML="Oops! Try again!";
-                }
-            }
-            function answerstolowercasealphabet2()
-            {                        
-                var a=document.getElementById("text_d").value;
-                if (a=="abcdefghijklmnopqrstuvwxyz")
-                {
-                    document.getElementById("answer4").innerHTML="Correct!";
-                }
-                else if(a=="a b c d e f g h i j k l m n o p q r s t u v w x y z")
-                {
-                    document.getElementById("answer4").innerHTML="Correct!";
-                }
-                else if(a==" a b c d e f g h i j k l m n o p q r s t u v w x y z ")
-                {
-                    document.getElementById("answer4").innerHTML="Correct!";
-                }
-                else if(a==" a b c d e f g h i j k l m n o p q r s t u v w x y z")
-                {
-                    document.getElementById("answer4").innerHTML="Correct!";
-                }
-                else if(a=="a b c d e f g h i j k l m n o p q r s t u v w x y z ")
-                {
-                    document.getElementById("answer4").innerHTML="Correct!";
-                }
-                else
-                {
-                document.getElementById("answer4").innerHTML="Oops! Try again!";
                 }
                 alert("Now, click the back button on the top of the page to learn something else!");
             }
