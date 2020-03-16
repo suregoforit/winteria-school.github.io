@@ -50,11 +50,11 @@
                         </p>
                         <br><br>
                         <p>Can you type the uppercase letters: </p>
-                        <input id = "text_k" type = "text" name = "uppercase alphabet 1">
+                        <input id = "text_a" type = "text" name = "uppercase alphabet 1">
                         <p id = "answer1"></p><br><br>   
                         <button onclick = "answerstoupercasealphabet1();">Done</button>
                         <p>Can you type the uppercase letters again: </p>
-                        <input id = "text_l" type = "text" name = "uppercase alphabet 2">
+                        <input id = "text_b" type = "text" name = "uppercase alphabet 2">
                         <p id = "answer2"></p><br><br>
                         <button onclick = "answerstoupercasealphabet2();">Done</button>
                         <h4>These are the lowercase letters of the phonic song:</h4>
@@ -68,11 +68,11 @@
                         </p>  
                         <br><br>
                         <p>Can you type the lowercase letters: </p>
-                        <input id = "text_a" type = "text" name = "lowercase alphabet 1">
+                        <input id = "text_c" type = "text" name = "lowercase alphabet 1">
                         <p id = "answer3"></p><br>
                         <button onclick = "answerstolowercasealphabet1();">Done</button>
                         <p>Can you type the lowercase letters again: </p>
-                        <input id = "text_b" type = "text" name = "lowercase alphabet 2">
+                        <input id = "text_d" type = "text" name = "lowercase alphabet 2">
                         <p id = "answer4"></p><br>         
                         <button onclick = "answerstolowercasealphabet2();">Done</button><br><br>
                     </div>
@@ -130,7 +130,7 @@
         <script type = "text/javascript">
         function answerstouppercasealphabet1()
             {
-                var a=document.getElementById("text_k").value;
+                var a=document.getElementById("text_a").value;
                 if (a=="ABCDEFGHIJKLMNOPQRSTUVWXYZ")
                 {
                     document.getElementById("answer1").innerHTML="Correct!";
