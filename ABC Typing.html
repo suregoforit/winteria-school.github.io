@@ -70,9 +70,9 @@
                         <p id = "answer2"></p><br>
                         <button onclick = "answers();">Done</button>
                         <p>Can you type the lowercase letters again: </p>
-                        <input id = "text_b" type = "text" name = "lowercase alphabet 2">
-                        <p id = "answer2"></p><br>         
-                        <button onclick = "answers();">Done</button><br><br>
+                        <input id = "text_c" type = "text" name = "lowercase alphabet 2">
+                        <p id = "answer3"></p><br>         
+                        <button onclick = "answersnext();">Done</button><br><br>
                     </div>
                 </div>
             </div>
@@ -177,6 +177,33 @@
                 else
                 {
                 document.getElementById("answer2").innerHTML="Oops! Try again!";
+                }
+            }
+            function anseersnext(){
+                var a=document.getElementById("text_c").value;
+                if (a=="abcdefghijklmnopqrstuvwxyz")
+                {
+                    document.getElementById("answer3").innerHTML="Correct!";
+                }
+                else if(a=="a b c d e f g h i j k l m n o p q r s t u v w x y z")
+                {
+                    document.getElementById("answer3").innerHTML="Correct!";
+                }
+                else if(a==" a b c d e f g h i j k l m n o p q r s t u v w x y z ")
+                {
+                    document.getElementById("answer3").innerHTML="Correct!";
+                }
+                else if(a==" a b c d e f g h i j k l m n o p q r s t u v w x y z")
+                {
+                    document.getElementById("answer3").innerHTML="Correct!";
+                }
+                else if(a=="a b c d e f g h i j k l m n o p q r s t u v w x y z ")
+                {
+                    document.getElementById("answer3").innerHTML="Correct!";
+                }
+                else
+                {
+                document.getElementById("answer3").innerHTML="Oops! Try again!";
                 }
                 alert("Now, click the back button on the top of the page to learn something else!");
             }
