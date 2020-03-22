@@ -179,8 +179,7 @@ hr.light-100 {
 }
 .tooltip:hover .tooltiptext {
   visibility: visible;
-}
-
+}          
 /*---Media Queries --*/
 @media (max-width: 992px) {
 
