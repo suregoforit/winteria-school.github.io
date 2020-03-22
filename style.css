@@ -179,7 +179,7 @@ hr.light-100 {
 }
 .input {
   width: 3rem;
-  height: 3rem;
+  height: 3rem; 
 }
 .tooltip:hover .tooltiptext {
   visibility: visible;
