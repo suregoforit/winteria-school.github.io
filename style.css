@@ -177,10 +177,6 @@ hr.light-100 {
   left: 50%;
   margin-left: -60px;
 }
-.input {
-  width: 1rem;
-  height: 1rem;                        
-}
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
