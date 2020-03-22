@@ -64,7 +64,7 @@
                         <p>Can you type the lowercase letters: </p>
                         <input id = "text_b" type = "text" name = "lowercase alphabet 1">
                         <p id = "answer2"></p><br>       
-                        <button onclick = "answers2();">Done</button><br><br>
+                        <button onclick = "answersnext();" onclick = "answers2();">Done</button><br><br>
                     </div>
                 </div>
             </div>
@@ -188,6 +188,8 @@
                 {
                 document.getElementById("answer2").innerHTML="Oops! Try again!";
                 }
+            }
+            function answersnext() {
                 alert("Now, click the back button on the top of the page to learn something else!");
             }
         </script>
