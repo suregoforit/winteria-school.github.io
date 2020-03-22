@@ -326,7 +326,9 @@
                 alert("Ask your mom or dad to help you learn the numbers 1 - 50, then click the back button on the top of the page to learn something else!");
             }
             var doEl = document.getElementsByTagName("h4");
-            doEl.innerHTML = "Fill in the Missing Number: "; 
+            for (var i = 0; i < doEl.length; i++) {
+                doEl[i].innerHTML = "cat";
+            }
         </script>
     </body>
 </html>
